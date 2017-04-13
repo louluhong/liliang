@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="http://g.tbcdn.cn/tb/global/3.3.35/global-min.css">
+<!-- <script src="http://g.tbcdn.cn/??kissy/k/1.4.2/seed-min.js"></script> -->
+<script src="//g.alicdn.com/??kissy/k/1.4.2/seed-min.js,tb/global/3.5.12/global-min.js"></script>
+<script type="text/javascript">
+	KISSY.config({
+	    packages:[
+	         {
+	            name:"kg",
+	            path:"//g.alicdn.com/kg/",
+	            ignorePackageNameInUri:true
+	         }
+	    ]
+	});
+</script>
+<style>
+	.clear{ zoom:1;}
+	.clear:after{ content:'.'; display:block; clear:both; height:0; visibility:hidden;}
+	.al_page{width:100%;font:12px 'Microsoft Yahei';overflow: hidden;min-width: 775px;}
+	.al_page img{ display:block; border:0; margin: 0 auto;}
+	.al_page a{text-decoration:none; outline:none;}
+	.al_page a:hover{ text-decoration:none;}
+
+	.al_page .by_w1190{width: 1190px;margin: 0 auto;}
+	.al_page .by_banner{/*background:#eaeaea url("http://gtms01.alicdn.com/tps/i1/TB1ZzSPIVXXXXbpaXXXHCVEIFXX-2000-556.png")no-repeat center top;*/position: relative;background-color: #eaeaea;background-image: url("http://gtms01.alicdn.com/tps/i1/TB1uu_lIVXXXXcZaXXXEARzIFXX-2000-497.png");width: 100%;background-position:center top;overflow: hidden;}
+	.al_page .by_banner .banner_img{}
+
+	.al_page .by_floor1{background: #eaeaea}
+	.by_floor1 .floor1_con{background: url("http://gtms02.alicdn.com/tps/i2/TB1P7u5IVXXXXbBXFXXCOC84FXX-1190-525.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+	 /*众筹大坑位图片在右*/
+    .pro_list .ys_displayL{width: 1190px;margin-left: 59px;}
+    .pro_list .ys_displayL li {width: 1072px;height: 471px;position: relative;margin: 0 10px 15px 0;}
+    .pro_list .ys_displayL li .pro_left{width: 746px;height: 497px;float: left;overflow: hidden;margin:28px 0 0 11px;}
+    .pro_list .ys_displayL .pro_right{width: 315px;height: 309px;float: left;overflow: hidden;background: #fff;margin-top: 188px; border-top: 1px solid #ffe400;}
+    .pro_list .ys_displayL .by_video{width: 747px;height: 509px;position: relative;float: left; background: #000;}
+    .pro_list .ys_displayL .video_height{height:470px;overflow: hidden; }
+
+    .pro_list .ys_displayL .ys_img {width: 747px;height: 471px;position: relative;float: left; background: #000; position: absolute; top:27px;}
+    .pro_list .ys_displayL .ys_status {width: 521px;height: 112px;background:url("http://gtms04.alicdn.com/tps/i4/TB155uYIVXXXXaYXVXXPw6OUpXX-521-112.png") no-repeat center top;position: absolute;bottom: -49px;right: -20px;}
+    .pro_list .ys_displayL .ys_title {width: 270px;height: 26px;overflow: hidden;font-size: 18px;color: #333;line-height:26px;margin: 0 auto;margin-top: 21px;}
+    .pro_list .ys_displayL .ys_title1 {width: 270px;height: 26px;overflow: hidden;font-size: 18px;color: #333;line-height:26px;margin: 0 auto;}
+    .pro_list .ys_displayL .list_ck {width: 270px;height: 10px;margin: 31px auto 15px;}
+    .pro_list .ys_displayL .list_percent {width: 270px;height: 10px;background: #e1e1e1;overflow: hidden;} 
+    .pro_list .ys_displayL .list_percent span {height: 10px;background: #00cccd;display: block;}
+    .pro_list .ys_displayL .list_data {width: 270px;margin: 0 auto;}
+    .pro_list .ys_displayL .list_data table tr th {height: 25px;color: #00CCCE;font-size: 14px;text-align: center;letter-spacing: -1px;}
+    .pro_list .ys_displayL .list_data table tr td {height: 25px;color: #999;font-size : 14px;text-align: center;}
+    .pro_list .ys_displayL .list_price{margin-top: 16px;margin-left: 15px;position: relative;} 
+    
+    .pro_list .ys_displayL .list_price .z_price{font-size: 14px;color: #787878;  position: absolute;  right: 23px;  top: -16px;}
+    .pro_list .ys_displayL .list_price .z_price i{font-size: 24px;font-style: normal;}
+    .pro_list .ys_displayL .list_price .z_price em{font-size: 33px;font-weight: bold;}
+    .pro_list .ys_displayL .list_price .s_price{color: #8A8A8A;font-size: 12px;padding-left: 14px;}
+    .by_floor1 .pro_list .ys_displayL .pro_right .list_btn{background: url("http://gtms02.alicdn.com/tps/i2/TB1lNS3IVXXXXcQXFXX3Nw9MXXX-315-51.png") no-repeat left;background-size: 100%;width: 315px;height: 51px;position: absolute;bottom:-27px;left: 0px;}
+
+    /*点赞*/
+    /*.pro_list .ys_displayL .list_dz{font-size: 14px; color: #787878;background: url("http://gtms03.alicdn.com/tps/i3/TB1lvDdIVXXXXcaXXXX6cUXFFXX-25-22.png")no-repeat left top;width: 110px;height: 22px;padding-left: 33px;display: inline-block;}*/
+    .tbc-dig-icon{background: url("http://gtms03.alicdn.com/tps/i3/TB1lvDdIVXXXXcaXXXX6cUXFFXX-25-22.png") no-repeat left;height: 22px!important;padding-left: 28px;}
+    .tbc-dig-icon.selected{background: url("http://gtms04.alicdn.com/tps/i4/TB1Nq1SIVXXXXcdaXXXXlk4HpXX-55-30.png") no-repeat center;width: 55px!important;}
+    .tbc-simple-like .tbc-dig-button, .tbc-simple-like .tbc-dig-button .tbc-dig-icon s, .tbc-simple-like .tbc-dig-count, .tbc-simple-like .tbc-dig-count span, .tbc-simple-like .tbc-tb-dig-tip .tbc-arrow, .tbc-common-like .tbc-tb-dig-tip .tbc-arrow{background: none!important;}
+    .tbc-simple-like .tbc-dig-button{height: 31px!important;}
+    .tbc-dig-button-title{display: none!important;}
+    .tbc-counter-num{font-size: 16px!important;position: absolute;top: 0px;left: 30px;color:#999 ;}
+    .like_count{font-size: 14px;color: #999999;  background: url("http://gtms03.alicdn.com/tps/i3/TB1lvDdIVXXXXcaXXXX6cUXFFXX-25-22.png")no-repeat left top; height: 31px;padding-left: 30px;cursor: pointer;}
+
+    .dz_succese{font-size: 14px;color: #999999; background: url("http://gtms03.alicdn.com/tps/i3/TB1x4a_IVXXXXbcaXXXI33XFFXX-25-23.png")no-repeat left top; height: 31px;padding-left: 30px;cursor: pointer;}
+
+    .pro_left .like_count em{color:#FF8400 ;}
+    .count{display: none;}
+
+    /*众筹大坑位图片在左*/
+	.al_page .by_floor2{background: #61a7fe;overflow: hidden;}
+	.by_floor2 .floor2_con{background: url("http://gtms03.alicdn.com/tps/i3/TB1MLK_IVXXXXaNXFXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .by_floor2 .pro_list .ys_displayL li .pro_left{width: 746px;height: 497px;float: left;overflow: hidden;margin:28px 11px 0 0;}
+    .by_floor2 .pro_list .ys_displayL .pro_right{width: 315px;height: 309px;float: right;overflow: hidden;background: #fff;margin-top: 188px; border-top: 1px solid #ffe400;}
+	.by_floor2 .pro_list .ys_displayL .ys_status {width: 521px;height: 112px;background:url("http://gtms01.alicdn.com/tps/i1/TB1PwqKIVXXXXcpapXXPw6OUpXX-521-112.png") no-repeat center top;position: absolute;bottom: -50px;left: -20px;}
+    .by_floor2 .pro_list .ys_displayL .pro_right .list_btn{background: url("http://gtms02.alicdn.com/tps/i2/TB1lNS3IVXXXXcQXFXX3Nw9MXXX-315-51.png") no-repeat left;background-size: 100%;width: 315px;height: 51px;position: absolute;bottom:-27px;right: 0px;}
+
+    
+    .by_floor1 .floor3_con{background: url("http://gtms01.alicdn.com/tps/i1/TB1OLG6IVXXXXX4apXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .al_page .by_floor4{background: #1aab90;overflow: hidden;}
+    .by_floor2 .floor4_con{background: url("http://gtms02.alicdn.com/tps/i2/TB1yOHmIVXXXXa_XpXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .by_floor1 .floor5_con{background: url("http://gtms03.alicdn.com/tps/i3/TB1pnYcIVXXXXaDXVXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .by_floor2 .floor6_con{background: url("http://gtms04.alicdn.com/tps/i4/TB1fzm7IVXXXXXuapXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .by_floor1 .floor7_con{background: url("http://gtms01.alicdn.com/tps/i1/TB1OuruIVXXXXbvXXXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+    
+    .al_page .by_floor8{background: #00bec0!important;overflow: hidden;}
+    .by_floor2 .floor8_con{background: url("http://gtms02.alicdn.com/tps/i2/TB1mUPwIVXXXXaiXXXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;}
+
+    .by_floor1 .floor9_con{background: url("http://gtms03.alicdn.com/tps/i3/TB1oQ98IVXXXXcqaXXXWaO94FXX-1190-530.jpg") no-repeat center top;width: 1190px;height: 525px;position: relative;}
+    .floor9_con .by_people{position: absolute;left: 75px;top: 53px;z-index: 999;}
+    
+    /*众筹小坑位*/
+    .al_page .by_floor3{background: #d7d7d7 url("http://gtms01.alicdn.com/tps/i1/TB18mjfIVXXXXXLXFXXhZBAIFXX-2000-532.jpg") no-repeat center top;overflow: hidden;}
+
+    .pro_list .ys_displayM{width: 1068px;position: relative;overflow: hidden;margin:113px auto 0;}
+    .pro_list .ys_displayM li {width: 518px;height: 202px;position: relative;margin: 0 16px 16px 0;background: #fff;float: left;}
+    .pro_list .ys_displayM li .pro_left{width: 308px;height: 202px;float: left;overflow: hidden;}
+    .pro_list .ys_displayM .pro_right{width: 210px;height: 202px;float: left;overflow: hidden;}
+    .pro_list .ys_displayM .ys_img {width: 308px;height: 202px;position: relative;float: left;}
+    .pro_list .ys_displayM .ys_status {height: 22px;padding: 0 15px;font-size: 12px;line-height: 22px;color: #fff;background: #00cecc;position: absolute;bottom: 0px;left: 0px;}
+    .pro_list .ys_displayM .ys_title {width: 186px;height: 40px;overflow: hidden;font-size: 14px;color: #666;line-height: 20px;margin: 10px auto;}
+    .pro_list .ys_displayM .list_ck {width: 210px;height: 3px;margin: 14px auto 10px;}
+    .pro_list .ys_displayM .list_percent {width: 210px;height: 3px;background: #e1e1e1;overflow: hidden;}
+    .pro_list .ys_displayM .list_percent span {height: 3px;background: #00cccd;display: block;}
+    .pro_list .ys_displayM .list_data {width: 210px;margin: 0 auto;}
+    .pro_list .ys_displayM .list_data table tr th {height: 20px;color: #00CCCE;font-size: 12px;text-align: center;letter-spacing: -1px;}
+    .pro_list .ys_displayM .list_data table tr td {height: 20px;color: #999;font-size: 12px;text-align: center;}
+    .pro_list .ys_displayM .pro_right .list_btn{background: url("http://gtms04.alicdn.com/tps/i4/TB19HzvIVXXXXXbXXXXhiEcHFXX-211-30.png") no-repeat center;background-size: 100%;width: 211px;height: 30px;position: absolute;bottom: 0px;right: 0px;}
+
+    .al_page .by_footer{position: relative;left: 50%;margin-left: -1050px;width: 2000px;}
+    .al_page .by_footer img{}
+
+    .by_site{ position:fixed; top:50%;left:50%; margin-left:625px;z-index: 111;display: block;}
+    .navscale{-webkit-animation:navscale .5s linear;-moz-animation:navscale .5s linear;-ms-animation:navscale .5s linear;animation:navscale .5s linear}@keyframes navscale {from{transform:scale(0)}to{transform:scale(1)}}@-webkit-keyframes navscale {from{transform:scale(0)}to{transform:scale(1)}}@-moz-keyframes navscale {from{transform:scale(0)}to{transform:scale(1)}}@-ms-keyframes navscale {from{transform:scale(0)}to{transform:scale(1)}}.navscale2{-webkit-animation:navscale2 .5s linear;-moz-animation:navscale2 .5s linear;-ms-animation:navscale2 .5s linear;animation:navscale2 .5s linear}@keyframes navscale2 {from{transform:scale(1)}to{transform:scale(0)}}@-webkit-keyframes navscale2 {from{transform:scale(1)}to{transform:scale(0)}}@-moz-keyframes navscale2 {from{transform:scale(1)}to{transform:scale(0)}}@-ms-keyframes navscale2 {from{transform:scale(1)}to{transform:scale(0)}}
+
+    
+    .al_page .banner_img{position: relative;}
+    .al_page .water1{position: absolute;left: 252px;top: 48px;z-index: 1;display:block;}
+    .al_page .water2{position: absolute;left: 252px;top: 48px;z-index: 2;display:none; ;}
+    .al_page .water3{position: absolute;left: 252px;top: 48px;z-index: 3;display: none;}
+    .al_page .water4{position: absolute;left: 252px;top: 48px;z-index: 4;display: none;}
+    .al_page .water5{position: absolute;left: 252px;top: 48px;z-index: 5;display: none;}
+    .al_page .water6{position: absolute;left: 252px;top: 48px;z-index: 6;display: none;}
+
+    /*.al_page .water2{left: 290px;top: 62px;position: absolute;display: none;}*/
+
+    .al_page .small_left{position: absolute;left: -209px;bottom: -86px;z-index: 1}
+    .al_page .big_left{left: -130px;top: 257px;position: absolute;}
+    .al_page .small_right{position: absolute;right: -21px;bottom: -86px;z-index: 1}
+    .al_page .big_right{right: -170px;top: 257px;position: absolute;}
+
+    .al_page .banner_left{position: absolute;left: -66px;top: 18px;}
+    .al_page .banner_right{position: absolute;right: -47px;top: -34px;}
+
+    .al_page .btn_1{position: absolute;left: 291px;top: -75px;z-index: 1}
+    .al_page .btn_2{left: 291px;top: -75px;position: absolute;display: none;z-index: 1}
+.anim_rotate{animation:anim_rotate 2s infinite linear;-moz-animation: anim_rotate 2s infinite linear;-webkit-animation: anim_rotate 2s infinite linear;-ms-animation: anim_rotate 2s infinite linear;}
+@-webkit-keyframes anim_rotate
+{
+    0% {-webkit-transform:rotate(0deg);}
+    50% {-webkit-transform:rotate(180deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+</style>
+<script>
+    var ua="";
+    var UA_Opt=new Object;
+    UA_Opt.LogVal="ua";
+    UA_Opt.MaxMCLog=3;
+    UA_Opt.MaxMPLog=3;
+    UA_Opt.MaxKSLog=3;
+    UA_Opt.Token=new Date().getTime()+":"+Math.random();
+    UA_Opt.SendMethod=8;
+    UA_Opt.Flag=12430;
+    function getUA(){ var tmp = ua; UA_Opt.Token= new Date().getTime()+":"+Math.random(); UA_Opt.reload(); return tmp;}
+</script>
+<script src="http://uaction.aliyuncdn.com/js/ua.js"></script>
+<body>
+	<div class="al_page">
+    <!-- 侧导航 -->
+        <div class="by_site">
+            <div class="site_nav">
+                <img src="http://gtms02.alicdn.com/tps/i2/TB1LKvyIVXXXXbFXXXXr2Q2LXXX-151-546.png" alt="" usemap="#Map">
+                <map name="Map">
+                  <area shape="rect" coords="13,87,149,133" href="#" target="_self">
+                  <area shape="rect" coords="14,132,149,178" href="#">
+                  <area shape="rect" coords="13,179,150,225" href="#">
+                  <area shape="rect" coords="13,224,149,270" href="#">
+                  <area shape="rect" coords="13,269,150,316" href="#">
+                  <area shape="rect" coords="13,316,150,363" href="#">
+                  <area shape="rect" coords="13,364,150,409" href="#">
+                  <area shape="rect" coords="14,408,150,455" href="#">
+                  <area shape="rect" coords="12,455,150,499" href="#">
+                  <area shape="rect" coords="11,502,150,542" href="#">
+                </map>
+            </div>
+        </div>
+		<div class="by_banner">
+			<div class="by_w1190">
+				<div class="banner_img">
+					<img src="http://gtms01.alicdn.com/tps/i1/TB1vpnHIVXXXXcXXpXXrNS54FXX-1190-480.png" alt="">
+
+                    <img src="http://gtms03.alicdn.com/tps/i3/TB178zEIVXXXXbBXFXXP56MMXXX-364-380.png" alt="" class="water1">
+                    <img src="http://gtms01.alicdn.com/tps/i1/TB13l6uIVXXXXXGaXXXP56MMXXX-364-380.png" alt="" class="water2">
+                    <img src="http://gtms02.alicdn.com/tps/i2/TB1zEYuIVXXXXXGaXXXP56MMXXX-364-380.png" alt="" class="water3">
+                    <img src="http://gtms03.alicdn.com/tps/i3/TB1Gw_EIVXXXXbIXFXXP56MMXXX-364-380.png" alt="" class="water4">
+                    <img src="http://gtms04.alicdn.com/tps/i4/TB1ffrLIVXXXXaGXpXXP56MMXXX-364-380.png" alt="" class="water5">
+                    <img src="http://gtms01.alicdn.com/tps/i1/TB16irEIVXXXXclXFXXP56MMXXX-364-380.png" alt="" class="water6">
+
+                    <img src="http://gtms02.alicdn.com/tps/i2/TB1OjDhIVXXXXbVapXX7sH72pXX-190-178.png" alt="" class="small_left">
+                    <img src="http://gtms01.alicdn.com/tps/i1/TB1ZL6nIVXXXXalaXXXb.vR2VXX-295-295.png" alt="" class="big_left">
+                    <img src="http://gtms02.alicdn.com/tps/i2/TB1OjDhIVXXXXbVapXX7sH72pXX-190-178.png" alt="" class="small_right">
+                    <img src="http://gtms01.alicdn.com/tps/i1/TB1ZL6nIVXXXXalaXXXb.vR2VXX-295-295.png" alt="" class="big_right">
+                    
+        
+                    <img src="http://gtms03.alicdn.com/tps/i3/TB1YRPyIVXXXXbuXVXXP9q53FXX-749-462.png" alt="" class="banner_left">
+                    <img src="http://gtms04.alicdn.com/tps/i4/TB1QPnnIVXXXXXNapXXvpbASpXX-726-487.png" alt="" class="banner_right">
+				</div>
+			</div>
+		</div> 
+		<!-- 大坑图片在右 -->
+		<div class="by_floor1" style="padding-top:15px;">
+                    
+			<div class="by_w1190" style="position: relative;">
+                <img src="http://gtms01.alicdn.com/tps/i1/TB1I0LMIVXXXXcjXXXXCpQVWFXX-551-90.png" alt="" class="btn_1">
+                <img src="http://gtms03.alicdn.com/tps/i3/TB1ICHMIVXXXXXRXpXXV43VWFXX-551-89.png" alt="" class="btn_2">
+				<div class="floor1_con">
+					<div class="pro_list">
+		               <!--众筹-->
+		               <ul class="ys_displayL" data-ids="35161"></ul>
+            		</div>
+				</div>
+			</div>
+		</div>
+		<!-- 大坑图片在左 -->
+		<div class="by_floor2">
+			<div class="by_w1190">
+				<div class="floor2_con">
+					<div class="pro_list">
+		               <!--众筹-->
+		               <ul class="ys_displayL" data-ids="33344"></ul>
+            		</div>
+				</div>
+			</div>
+		</div>
+		<!-- 大坑视频在右 -->
+		<div class="by_floor1">
+			<div class="by_w1190">
+				<div class="floor1_con floor3_con">
+					<div class="pro_list">
+		               <!--众筹-->
+		               <ul class="ys_displayL" data-ids="29653"></ul>
+            		</div>
+				</div>
+			</div>
+		</div>
+        <!-- 大坑视频在左 -->
+        <div class="by_floor2 by_floor4">
+            <div class="by_w1190">
+                <div class="floor2_con floor4_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="33344"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 大坑视频在右 -->
+        <div class="by_floor1">
+            <div class="by_w1190">
+                <div class="floor1_con floor5_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="29653"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 大坑视频在左 -->
+        <div class="by_floor2">
+            <div class="by_w1190">
+                <div class="floor2_con floor6_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="33344"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 大坑视频在右 -->
+        <div class="by_floor1">
+            <div class="by_w1190">
+                <div class="floor1_con floor7_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="29653"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 大坑视频在左 -->
+        <div class="by_floor2 by_floor8">
+            <div class="by_w1190">
+                <div class="floor2_con floor8_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="33344"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 大坑视频在左 -->
+        <div class="by_floor1">
+            <div class="by_w1190">
+                <div class="floor2_con floor9_con">
+                    <img src="http://gtms02.alicdn.com/tps/i2/TB14djmIVXXXXb5XpXXNwMJQpXX-300-146.png" alt="" class="by_people">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayL" data-ids="34619"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 小坑 -->
+        <div class="by_floor3">
+            <div class="by_w1190">
+                <div class="floor3_con">
+                    <div class="pro_list">
+                       <!--众筹-->
+                       <ul class="ys_displayM" data-ids="7275,6014,7928,5951,5929,33344"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="by_footer">
+            <img src="http://gtms02.alicdn.com/tps/i2/TB1yaO3IVXXXXXqapXXwJ.SIpXX-2000-155.jpg" alt="">
+        </div>
+	</div>
+</body>
+
+
+<script>
+    var _tms_data=[
+
+        {pid:"35161",yj:"100",xj:"120",vid:""},
+        {pid:"33344",yj:"100",xj:"120"},
+        {pid:"29653",yj:"100",xj:"120",vid:"27357030"}
+    ]
+</script>
+<!--大坑位-->
+<script type="text/tpl" class="ItemTmplL">
+    <li class="item_{{result.id}}">
+        
+
+            <div class="pro_right">
+            <a href="{{linkurl}}" target="_blank">
+                <!--标题-->
+                <p class="ys_title">{{result.name}}</p>
+                <p class="ys_title1">手掌大小的千元IMAX移动影院</p>
+                <!--百分比-->
+                <div class="list_ck">
+                    <div class="list_percent">
+                        <span style="width:{{pers}}"></span>
+                    </div>
+                </div>
+                <!--数据-->
+                <div class="list_data">
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <th width="25%" align="left" class="list_per">{{pers}}</th>
+                            <th align="center" class="list_ysje">￥{{result.curr_money}}</th>
+                            <th align="right" width="25%" class="list_num">{{result.buy_amount}}人</th>
+                        </tr>
+                        <tr>
+                            <td align="right">达成率</td>
+                            <td align="left">已筹金额</td>
+                            <td align="center">支持人数</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+                <!--价格-->
+                <div class="list_price">
+                    <div class="count">{{result.focus_count}}</div>
+                    <div class="zan_wrapper" date-key="{{result.id}}"></div>
+                    <div class="like_count like_btn{{result.id}}" data-key="{{result.id}}">{{result.focus_count}}<em>人</em>喜欢他</div>
+                   
+                	
+                    <span class="z_price">众筹价:<i>￥</i><em>{{result.yj}}</em></span>
+                </div>
+                <a href="{{linkurl}}" target="_blank">
+                <!--查看项目-->
+                <div class="list_btn"></div>
+                </a>
+            </div>
+        
+        <a class="big_link" href="{{linkurl}}" target="_blank">
+            <div class="pro_left">
+                <!--图片-->
+                	<div class="video_height"><div class="by_video" data-vid="{{result.vid}}"></div></div>
+                    <img class="ys_img" src="http://img.alicdn.com/tfscom/TB1qqcqIFXXXXXXXpXXSutbFXXX">
+                <!--左下标-->
+                <p class="ys_status"></p>
+            </div>
+        </a>
+        
+    </li>
+</script>
+<!--小坑位-->
+<script type="text/tpl" class="ItemTmplM">
+    <li>
+        <a href="{{linkurl}}" target="_blank">
+
+            <div class="pro_left">
+                <!--图片-->
+                    <img class="ys_img" src="{{result.image}}">
+                <!--左下标-->
+                <p class="ys_status">{{result.status}}</p>
+            </div>
+
+            <div class="pro_right">
+                <!--标题-->
+                <p class="ys_title">{{result.name}}</p>
+                <!--百分比-->
+                <div class="list_ck">
+                    <div class="list_percent">
+                        <span style="width:{{pers}}"></span>
+                    </div>
+                </div>
+                <!--数据-->
+                <div class="list_data">
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <th width="25%" align="left" class="list_per">{{pers}}</th>
+                            <th align="center" class="list_ysje">￥{{result.curr_money}}</th>
+                            <th align="right" width="25%" class="list_num">{{result.buy_amount}}人</th>
+                        </tr>
+                        <tr>
+                            <td align="right">达成率</td>
+                            <td align="left">已筹金额</td>
+                            <td align="center">支持人数</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--查看项目-->
+                <div class="list_btn"></div>
+            </div>
+        </a>
+    </li>
+</script>
+
+<script>
+    KISSY.use("dom,event,node,io,gallery/template/1.0/,kg/datalazyload/2.0.2/,kg/tb-video-player/2.0.3/index,tbc/like/1.1.5/,ua,kg/mini-login/6.0.2/", function (S, DOM, Event, Node, IO, Template, Datalazyload, TbVideoPlayer,Like,UA,ML) {
+      var $=Node.all;
+
+      $('.small_left').addClass('.anim_rotate');
+      $('.big_left').addClass('.anim_rotate');
+      $('.small_right').addClass('.anim_rotate');
+      $('.big_right').addClass('.anim_rotate');
+      setTimeout(function(){
+        // $(".water2").css("display","block");
+        setTimeout(function(){
+            var step=0;
+            var step1=0;
+            var timmer=setInterval(function(){
+                step+=1;
+                if(step==1)
+                {
+                    $(".water2").css("display","block");
+                }else if(step==2){
+                    $(".water3").css("display","block");
+                }else if(step==3)
+                {
+                    $(".water4").css("display","block");
+                }else if(step==4)
+                {
+                    $(".water5").css("display","block");
+                }else  {
+                    $(".water6").css("display","block");
+                }
+                console.log(step)
+                var timmer=setInterval(function(){
+                    step1+=1;
+                    if(step1==1)
+                    {
+                        $(".btn_1").css("display","none");
+                    }else if(step1==2){
+                        $(".btn_1").css("display","block");
+                    }else if(step1==3)
+                    {
+                        $(".btn_1").css("display","none");
+                    }else if(step1==4)
+                    {
+                        $(".btn_1").css("display","block");
+                    }else{
+                        $(".btn_2").css("display","block");
+
+                    }
+                    console.log(step)
+                },3000);
+            },400);
+         },3000)
+        // $(".water2").css("display","none");
+      },2000)
+
+      
+        // 侧导航
+        if(UA.ipad > 0){
+            S.all('#J_SiteNav').hide();
+            S.all('.by-nav').hide();
+            S.all('#guid-1399362069664').hide();
+            S.all('#guid-13995121159260').hide();
+            S.all('.footer_2014').hide();
+        }else{
+            //导航效果
+            S.all(window).on("scroll",function(){
+                if(S.all(window).scrollTop() > 300){
+                    S.all(".by_site").show(.5);
+                }else{
+                    S.all(".by_site").hide(.5);
+                }
+            })
+        }
+        
+        //返回顶部
+        S.all("#toTop").on("click",function(e){
+            e.preventDefault();
+            S.all(window).animate({
+                scrollTop:0
+            },.5,'easeOut');
+        });
+
+        function render(par1,par2){
+            S.all(par1).each(function (index) {
+                var ids = S.all(this).attr("data-ids");
+                var url = "http://izhongchou.taobao.com/dream/ajax/getProjectList.htm?page=1&pageSize=20";
+                var obj = S.all(this);
+                var tmpl = new Template(S.all(par2).html()).render;
+                IO({
+                    url: url,
+                    dataType: "jsonp",
+                    data: {
+                        type: 4,
+                        ids: ids
+                    },
+                    success: function (result) {
+                        if (result.status == 1) {
+                            var datas = result.data;
+                            S.each(datas, function (item) {
+                                //console.log(item);
+                                var id=item.id;
+                                for(var i=0;i<_tms_data.length;i++)
+                                {
+                                    if(_tms_data[i].pid==id)
+                                    {
+                                        item.yj=_tms_data[i].yj;
+                                        item.xj=_tms_data[i].xj;
+                                        item.vid=_tms_data[i].vid;
+                                    }
+                                }
+                                //console.log(_tms_data[0].yj)
+
+                                var linkurl = "http://hi.taobao.com/market/hi/detail2014.php?spm=a215p.7180453.0.0.GFAGGu&id=" + item.id;
+                                var cmoney = item.curr_money;
+                                var tmoney = item.target_money;
+                                var endtime = new Date(item.end_date).getTime();
+                                var now = new Date();
+                                now = now.getTime();
+                                var days = parseInt((endtime - now) / 1000 / 3600 / 24);
+                                if (days <= 0) {
+                                    days = 0;
+                                }
+                                if (isNaN(days)) {
+                                    days = 0;
+                                }
+                                var per = cmoney / tmoney;
+                                per = parseInt(per * 100) + "%";
+                                obj.append(tmpl({result: item, day: days, pers: per, linkurl: linkurl}));
+                                var videoVid = obj.all('.by_video').attr('data-vid');
+                                var videoBox = obj.one('.by_video');
+                                // obj.one('.by_video').hide();
+                                if(videoVid){
+                                   // DOM.removeAttr(obj.one('.big_link'),'href');
+                                   // obj.one('.big_link').attr("href","javascript:void(0)")
+                                    obj.one('.ys_img').on('click',function(e){
+                                       e.halt();//阻止默认事件
+
+                                        obj.one('.ys_img').hide();
+                                        obj.one('.by_video').show();
+                                        new TbVideoPlayer({
+                                            vid: videoVid,
+                                            container: videoBox,
+                                            isAutoPlay: true
+                                        });
+                                    });
+                                }
+                          
+                            })
+                            
+                        }
+                        else {
+                            alert(result.message);
+                        }
+                    }
+                });
+            });
+        }
+//        大坑位
+        render(".ys_displayL",".ItemTmplL");
+
+//        小坑位
+        render(".ys_displayM",".ItemTmplM");
+
+        // 点赞
+
+        Event.delegate(document,'click','.like_count',function(e){
+            var target = e.target;
+            var targetId = DOM.attr(target,"data-key");
+
+            var minilogin=new ML();
+            minilogin.show(function(){
+
+
+                KISSY.jsonp('http://www.taobao.com/go/rgn/global/token.php', function (token) { 
+                    IO({
+                        url: 'http://izhongchou.taobao.com/dream/ajax/getProjectForDetail.htm',
+                        dataType: "jsonp",
+                        data: {
+                            type: 0,
+                            id: targetId,
+                            _tb_token_:token
+                        },
+                        success: function(fData){
+                            //if(da)
+                            if(fData.data.focus==0){
+                                IO({
+                                    url: 'http://izhongchou.taobao.com/dream/ajax/focusProject.htm',
+                                    dataType: "jsonp",
+                                    data: {
+                                        type: 0,
+                                        id: targetId,
+                                        _tb_token_:token
+                                    },
+                                    success: function(dData){
+                                        //console.log("dData",dData.status)
+                                       //console.log(targetId)
+                                        $('.like_btn'+targetId).addClass("dz_succese")
+                                        alert('喜欢成功！');
+                                        
+                                    }
+                                })
+                            }else{
+                                //console.log(targetId)
+                                $('.like_btn'+targetId).addClass("dz_succese")
+                                alert('您已经喜欢过了！');
+
+                            }
+                        }
+                    })
+                });
+
+
+            }); 
+
+        });
+       
+    });
+
+
+</script>
+</html>
